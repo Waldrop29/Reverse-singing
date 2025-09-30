@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Reverse Singing</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <main class="container">
+            <h1>Reverse Singing — Record</h1>
+
+            <div id="buttons">
+                <button id="startBtn" class="primary">Start</button>
+                <button id="stopBtn" class="danger" disabled>Stop</button>
+                <button id="playRecording">Play original</button>
+                <button id="playReversed">Play reversed</button>
+            </div>
+
+            <p id="status">Status: idle</p>
+
+            <audio id="recordedAudio" controls />
+
+            <p id="note">Note: your browser will ask for microphone permission. Recording uses the MediaRecorder API — supported in modern Chrome, Edge, and Firefox.</p>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
